@@ -1,0 +1,12 @@
+.darkmode {
+  background: black;
+}
+
+body {
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+body .darkmode {
+  background-color: black;
+}
