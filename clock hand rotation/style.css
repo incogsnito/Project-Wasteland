@@ -27,20 +27,19 @@ body {
 
 .minute-hand {
   width: 5px;
-  height: 100px;
-
+  height: 40%;
+  top: 10%;
   left: 50%;
-
   position: absolute;
   background: gray;
   transform-origin: bottom;
-
   animation: motion 3600s infinite linear;
 }
 .clock {
   height: 300px;
   position: relative;
   width: 300px;
+
   border: 1px solid grey;
   border-radius: 50%;
 }
