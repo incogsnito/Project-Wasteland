@@ -16,10 +16,8 @@ body {
 .second-hand {
   width: 5px;
   height: 50%;
-
   position: absolute;
   left: 50%;
-
   background: gray;
   transform-origin: bottom;
   animation: motion 60s steps(60) infinite;
@@ -27,14 +25,26 @@ body {
 
 .minute-hand {
   width: 5px;
-  height: 40%;
-  top: 10%;
+  height: 45%;
+  top: 5%;
   left: 50%;
   position: absolute;
   background: gray;
   transform-origin: bottom;
   animation: motion 3600s infinite linear;
 }
+
+.hour-hand {
+  width: 5px;
+  height: 40%;
+  top: 10%;
+  left: 50%;
+  position: absolute;
+  background: gray;
+  transform-origin: bottom;
+  animation: motion infinite 43200s linear;
+}
+
 .clock {
   height: 300px;
   position: relative;
