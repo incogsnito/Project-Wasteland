@@ -13,15 +13,39 @@ body {
   justify-content: center;
 }
 
-.hand {
+.second-hand {
   width: 5px;
-  height: 100px;
+  height: 50%;
+
+  position: absolute;
+  left: 50%;
+
   background: gray;
   transform-origin: bottom;
-  animation: secondsMotion 60s steps(60) infinite;
+  animation: motion 60s steps(60) infinite;
 }
 
-@keyframes secondsMotion {
+.minute-hand {
+  width: 5px;
+  height: 100px;
+
+  left: 50%;
+
+  position: absolute;
+  background: gray;
+  transform-origin: bottom;
+
+  animation: motion 3600s infinite linear;
+}
+.clock {
+  height: 300px;
+  position: relative;
+  width: 300px;
+  border: 1px solid grey;
+  border-radius: 50%;
+}
+
+@keyframes motion {
   0% {
     transform: rotate(0deg);
   }
@@ -30,5 +54,3 @@ body {
     transform: rotate(360deg);
   }
 }
-
-@keyframes;
