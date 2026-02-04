@@ -17,7 +17,7 @@ body {
 
 nav {
   display: flex;
-  gap: 1em;
+  gap: 2em;
 }
 
 .nav-item {
@@ -28,30 +28,31 @@ nav {
   display: none;
 }
 
-.home:hover::before {
+.nav-item::before {
+  content: "";
+  transform: translate(-20px);
+}
+
+.nav-item:hover::before {
   content: "Home";
 
-  transform: translate(20px);
-  transform: 1.5s;
+  display: inline-block;
+  transform: translate(0px);
+  transition: transform 1s ease-in-out;
+}
+
+.home:hover::before {
+  content: "Home";
 }
 
 .search:hover::before {
   content: "Search";
-
-  transform: translate(20px);
-  transform: 1.5s;
 }
 
 .stats:hover::before {
   content: "Stats";
-
-  transform: translate(20px);
-  transform: 1.5s;
 }
 
 .profile:hover::before {
   content: "Profile";
-
-  transform: translate(20px);
-  transform: 1.5s;
 }
