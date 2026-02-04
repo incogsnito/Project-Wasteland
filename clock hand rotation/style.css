@@ -11,20 +11,21 @@ body {
   min-height: 100vh;
   align-items: center;
   justify-content: center;
+  background: rgb(10, 10, 10);
 }
 
 .second-hand {
-  width: 5px;
+  width: 2px;
   height: 50%;
   position: absolute;
   left: 50%;
-  background: gray;
+  background: rgba(255, 0, 0, 0.438);
   transform-origin: bottom;
   animation: motion 60s steps(60) infinite;
 }
 
 .minute-hand {
-  width: 5px;
+  width: 3px;
   height: 45%;
   top: 5%;
   left: 50%;
@@ -35,12 +36,12 @@ body {
 }
 
 .hour-hand {
-  width: 5px;
+  width: 3px;
   height: 40%;
   top: 10%;
   left: 50%;
   position: absolute;
-  background: gray;
+  background: black;
   transform-origin: bottom;
   animation: motion infinite 43200s linear;
 }
@@ -49,7 +50,7 @@ body {
   height: 300px;
   position: relative;
   width: 300px;
-
+  background: white;
   border: 1px solid grey;
   border-radius: 50%;
 }
@@ -62,4 +63,16 @@ body {
   100% {
     transform: rotate(360deg);
   }
+}
+
+.bullet {
+  width: 10px;
+  height: 10px;
+  background: brown;
+  position: absolute;
+  z-index: 7;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
 }
