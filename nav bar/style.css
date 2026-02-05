@@ -18,11 +18,25 @@ body {
 nav {
   display: flex;
   gap: 2em;
+  overflow: hidden;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.486);
+  border-radius: 0.4em;
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
 .nav-item {
   cursor: pointer;
+
   overflow: hidden;
+}
+
+.nav-item p {
+  padding-inline: 1em;
+  padding-block: 0.8em;
 }
 
 .nav-item:hover p {
@@ -36,10 +50,13 @@ nav {
 
 .nav-item:hover::before {
   content: "Home";
-
+  padding-inline: 1em;
+  padding-block: 0.8em;
+  border-radius: 4px;
+  background: rgba(128, 0, 128, 0.692);
   display: inline-block;
   transform: translate(0px);
-  transition: transform 1s ease-in-out;
+  transition: transform 0.5s linear;
 }
 
 .home:hover::before {
