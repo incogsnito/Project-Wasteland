@@ -45,7 +45,11 @@ nav {
 
 .nav-item::before {
   content: "";
-  transform: translate(-20px);
+  transform: translate(-40px);
+}
+
+.profile::before {
+  transform: translate(40px);
 }
 
 .nav-item:hover::before {
