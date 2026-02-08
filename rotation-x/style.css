@@ -1,0 +1,19 @@
+body {
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  display: flex;
+  background: black;
+}
+
+div {
+  background: white;
+  width: 150px;
+  height: 200px;
+  border-radius: 8px;
+}
+
+div:hover {
+  transform: rotateX(50deg);
+  transition: transform 0.5s linear;
+}
