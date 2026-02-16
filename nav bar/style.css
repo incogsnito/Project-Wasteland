@@ -45,22 +45,28 @@ nav {
 
 .nav-item::before {
   content: "";
-  transform: translate(-40px);
-}
-
-.profile::before {
-  transform: translate(40px);
+  opacity: 0;
 }
 
 .nav-item:hover::before {
+  content: "";
+  padding-inline: 1em;
+  padding-block: 0.8em;
+  border-radius: 4px;
+  background: rgba(128, 0, 128, 0.692);
+  display: inline-block;
+  opacity: 1;
+  transition: opacity 0.5s linear;
+}
+
+.nav-item:active::before {
   content: "Home";
   padding-inline: 1em;
   padding-block: 0.8em;
   border-radius: 4px;
   background: rgba(128, 0, 128, 0.692);
   display: inline-block;
-  transform: translate(0px);
-  transition: transform 0.5s linear;
+  opacity: 1;
 }
 
 .home:hover::before {
